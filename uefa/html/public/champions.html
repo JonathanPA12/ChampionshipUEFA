@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Champions League</title>
+</head>
+<body>
+    <header class="fixed-top">
+		<div class="bg-dark collapse navbar-collapse" id="navbarHeader">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-8 py-4">
+						<h4 class="text-white">Sobre UEFA</h4>
+						<p class="text-muted">La UEFA, la Unión de Federaciones Europeas de Fútbol, es el órgano rector del fútbol europeo y una organización global de 55 federaciones nacionales.</p>
+					</div>
+					<div class="col-12 col-sm-4 py-4">
+						<h4 class="text-white">Contáctanos</h4>
+						<ul class="list-unstyled">
+							<li>
+                                <a 
+                                    class="text-white" 
+                                    data-bs-toggle="modal"
+			                        data-bs-target="#mi-modal-1"
+                                >
+                                Envíanos un E-mail
+                                </a>
+                            </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar navbar-dark bg-dark">
+			<div class="container">
+				<a href="index.html" class="navbar-brand d-flex align-items-center">
+					<img src="img/uefaIcon.png" alt="" class="img-fluid card-img-top" >
+					<strong class="p-2">UEFA</strong>
+				</a>              
+				<button 
+					class="navbar-toggler collapsed"
+					type="button" 
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarHeader"
+					aria-controls="navbarHeader"
+					aria-expanded="false"
+					aria-label="Alternar Navegacion"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+	</header>
+    <main>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col">   
+                    <div
+                        class="modal fade"
+                        id="mi-modal-1"
+                        tabindex="-1"
+                        aria-hidden="true"
+                        aria-labelledby="label-modal-1"
+                    >
+                        <!-- Caja de dialogo -->
+                        <div class="modal-dialog">
+                            <!-- Contenido de la caja -->
+                            <div class="modal-content rounded-5 shadow">
+                                <!-- Encabezado de la caja -->
+                                <div class="modal-header p-5 pb-4 border-bottom-0">
+                                    <h2 class="modal-title fw-bold mb-0">Contáctanos</h2>
+                                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                </div>
+    
+                                <!-- Cuerpo de la caja -->
+
+                                <div class="modal-body p-5 pt-0">
+                                    <form action="" class="formulario">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="John Doe">
+                                                    <label for="nombre">Nombre</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="form-floating mb-3">
+                                                    <input type="email" name="correo" id="correo" class="form-control" placeholder="correo@correo.com">
+                                                    <label for="nombre">Correo</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating mb-3">
+                                                    <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Mensaje"></textarea>
+                                                    <label for="mensaje">Mensaje</label>
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <button class="boton" type="submit">Enviar E-mail</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Pie de pagina de la caja -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
